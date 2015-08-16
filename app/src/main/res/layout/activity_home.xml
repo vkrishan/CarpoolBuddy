@@ -16,23 +16,22 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Create Carpool"
-        android:id="@+id/textView9"
+        android:id="@+id/CreateCarpool"
+        android:layout_marginTop="90dp"
         android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp" />
+        android:layout_centerHorizontal="true" />
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Find Carpool"
-        android:id="@+id/textView10"
+        android:id="@+id/FindCarpool"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/textView9"
-        android:layout_alignStart="@+id/textView9" />
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>

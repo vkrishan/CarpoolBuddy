@@ -9,4 +9,5 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_create_carpool">CreateCarpoolActivity</string>
     <string name="title_activity_find_carpool">FindCarpoolActivity</string>
+    <string name="title_activity_carpool_search">CarpoolSearchActivity</string>
 </resources>

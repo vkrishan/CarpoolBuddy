@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.carpool.vkrishax.carpool">
+    package="com.carpool.vkrishax.carpool" >
 
     <application
         android:allowBackup="true"
@@ -39,6 +39,10 @@
         <activity
             android:name=".FindCarpoolActivity"
             android:label="@string/title_activity_find_carpool" >
+        </activity>
+        <activity
+            android:name=".CarpoolSearchActivity"
+            android:label="@string/title_activity_carpool_search" >
         </activity>
     </application>
 

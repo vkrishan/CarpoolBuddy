@@ -1,17 +1,45 @@
 package com.carpool.vkrishax.carpool;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class HomeActivity extends ActionBarActivity {
+public class HomeActivity extends Activity {
+
+    Button createCarpool;
+    Button findCarpool;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        createCarpool = (Button) findViewById(R.id.CreateCarpool);
+        findCarpool = (Button) findViewById(R.id.FindCarpool);
+
+        createCarpool.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int1 = new Intent(HomeActivity.this, CreateCarpoolActivity.class);
+                startActivity(int1);
+
+            }
+        });
+
+        findCarpool.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int2 = new Intent(HomeActivity.this, CarpoolSearchActivity.class);
+                startActivity(int2);
+
+            }
+        });
+
     }
 
     @Override
