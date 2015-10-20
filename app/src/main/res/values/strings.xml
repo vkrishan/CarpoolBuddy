@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Carpool</string>
+    <string name="app_name">Carpool Buddy</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -10,4 +10,32 @@
     <string name="title_activity_create_carpool">CreateCarpoolActivity</string>
     <string name="title_activity_find_carpool">FindCarpoolActivity</string>
     <string name="title_activity_carpool_search">CarpoolSearchActivity</string>
+    <string name="state_prompt">Choose a State</string>
+
+    <string name="logout">Logout</string>
+    <string name="loginText">Please login with your Google Account</string>
+    <string-array name="states">
+        <item>California</item>
+        <item>Minneapolis</item>
+        <item>Texas</item>
+        <item>New York</item>
+        <item>Washington</item>
+        <item>North Carolina</item>
+    </string-array>
+
+    <string-array name="NavMenu">
+        <item>Home</item>
+        <item>Find Carpool</item>
+        <item>Settings</item>
+        <item>Feedback</item>
+        <item>Tips</item>
+        <item>About</item>
+    </string-array>
+    <string name="title_activity_sample_view">SampleView</string>
+    <string name="action_search">Search</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

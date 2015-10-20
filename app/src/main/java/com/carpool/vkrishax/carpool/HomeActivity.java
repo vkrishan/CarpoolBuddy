@@ -1,33 +1,41 @@
 package com.carpool.vkrishax.carpool;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 
-public class HomeActivity extends Activity {
+public class HomeActivity extends AppCompatActivity {
 
     Button createCarpool;
     Button findCarpool;
+    Button testview;
+    private android.support.v7.widget.Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        mToolbar= (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         createCarpool = (Button) findViewById(R.id.CreateCarpool);
         findCarpool = (Button) findViewById(R.id.FindCarpool);
+        testview = (Button) findViewById(R.id.buttonTestView);
 
+        // enabling support for action bar
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+        // Button listeners
         createCarpool.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent int1 = new Intent(HomeActivity.this, CreateCarpoolActivity.class);
                 startActivity(int1);
-
             }
         });
 
@@ -36,10 +44,16 @@ public class HomeActivity extends Activity {
             public void onClick(View v) {
                 Intent int2 = new Intent(HomeActivity.this, CarpoolSearchActivity.class);
                 startActivity(int2);
-
             }
         });
 
+        testview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int3 = new Intent(HomeActivity.this, SampleView.class);
+                startActivity(int3);
+            }
+        });
     }
 
     @Override

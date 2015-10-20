@@ -16,128 +16,248 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textView11"
+    >
 
 
-       <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="1"
-        android:layout_below="@+id/textView11"
-        android:id="@+id/table1">
+        android:orientation="vertical">
 
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="Source"
-                android:padding="3dip" />
-            <Spinner
-                android:id="@+id/spinnerSource"
-                android:layout_width="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
 
-            </Spinner>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
 
 
-        </TableRow>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
 
-    <TableRow>
-        <TextView
-            android:layout_column="1"
-            android:text="Destination"
-            android:padding="3dip" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Source"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
 
-        <Spinner
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Destination"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="# of Days"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dates"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time In"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time Out"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/dim_foreground_disabled_material_dark"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Spots Avail."
+                    android:layout_weight="1" />
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/states"
+                    android:prompt="@string/state_prompt"
+                    android:layout_weight="2">
+                </Spinner>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner2"
-            android:layout_column="2" />
-    </TableRow>
+            android:text="SAVE"
+            android:layout_gravity="center" />
 
-    <TableRow >
-        <TextView
-            android:layout_column="1"
-            android:text="# of Days"
-            android:padding="3dip"
-             />
+    </LinearLayout>
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/spinner3"
-            android:layout_column="2" />
-
-    </TableRow>
-
-        <TableRow >
-            <TextView
-                android:layout_column="1"
-                android:text="Date"
-                android:padding="3dip"
-                />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner4"
-                android:layout_column="2" />
-
-        </TableRow>
-
-        <TableRow >
-            <TextView
-                android:layout_column="1"
-                android:text="Time In"
-                android:padding="3dip"
-                />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner5"
-                android:layout_column="2" />
-
-        </TableRow>
-
-        <TableRow >
-            <TextView
-                android:layout_column="1"
-                android:text="Time Out"
-                android:padding="3dip"
-                />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner6"
-                android:layout_column="2" />
-
-        </TableRow>
-
-        <TableRow >
-            <TextView
-                android:layout_column="1"
-                android:text="Spots ava."
-                android:padding="3dip"
-                />
-
-            <Spinner
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinner7"
-                android:layout_column="2" />
-
-        </TableRow>
-
-
-</TableLayout>
-
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/Create"
-    android:layout_below="@+id/table1"
-    android:text="CREATE"
-    android:gravity="center_horizontal"
-    />
-
+</ScrollView>
 
 </RelativeLayout>

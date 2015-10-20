@@ -6,15 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.carpool.vkrishax.carpool.HomeActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome"
-        android:id="@+id/textView8"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
 
     <Button
         android:layout_width="wrap_content"
@@ -22,7 +14,7 @@
         android:text="Create Carpool"
         android:id="@+id/CreateCarpool"
         android:layout_marginTop="90dp"
-        android:layout_below="@+id/textView8"
+
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -33,5 +25,17 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Run test view"
+        android:id="@+id/buttonTestView"
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="55dp" />
+
+<include android:id="@+id/toolbar"
+         layout="@layout/toolbar" />
 
 </RelativeLayout>
